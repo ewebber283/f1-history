@@ -1,0 +1,42 @@
+
+* {
+    background-color: red;
+    color: white;
+    font-family: sans-serif;
+    background-image: url(../assets/images/background.jpg);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100%;
+}
+
+.logo {
+    text-align: center;
+    font-size: 58px;
+    padding-top: 50px ;
+    font-family: sans-serif;
+    color: white;
+}
+.f1 {
+    color: red;
+    font-family: sans-serif;
+}
+
+a.navbar-item {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+a.navbar-item:hover {
+    background-image: none;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+}
+
+.hero-body p {
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-size: 18px;
+}
