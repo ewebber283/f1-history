@@ -24,14 +24,21 @@
         <section class="hero is-halfheight">
             <div class="hero-body">
                     <p>
-                        A search site designed to show the yearly winners of the F1 drivers cup
+                        A search site designed to show the yearly standings of the F1 drivers cup
                     </p>
             </div>
         </section>
     </div>
+    <!-- Error modal-->
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content"></div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    
     <div class="columns" id="search-section">
         <form action="#search-section" id="search-form" class="column is-6 is-offset-3">
-            <h1 class="country-name">Search for a year below to see the final driver standings for that year:</h1>
+            <h1 class="year">Search for a year below to see the final driver standings:</h1>
             <input class="input is-focused" type="text" id="search-term" placeholder="Enter Year" />
             <button type="submit" id="search-btn" class="button is-small is-inverted">SEARCH</button>
         </form>

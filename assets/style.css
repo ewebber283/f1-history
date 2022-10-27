@@ -40,3 +40,59 @@ a.navbar-item:hover {
     color: white;
     font-size: 18px;
 }
+
+#search-section {
+    margin: auto;
+}
+
+.year {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+form {
+    text-align: center;
+}
+.button{
+    margin-top: 20px;
+    background-image: unset;
+    background-color: white;
+    padding: 20px 70px;
+    font-family: sans-serif;
+    color: red;
+    box-shadow: 0px 0px 20px 2px red;
+}
+.button:hover {
+    padding: 20px 65px;
+}
+.button.is-small:not(.is-rounded) {
+    border-radius: 40px;
+}
+.button.is-small {
+    font-size: 18px;
+}
+
+#search-term {
+    border-radius: 15px;
+    background-image: unset;
+    background-color: white;
+}
+
+.modal-content {
+    background-image: unset;
+    background-color: white;
+    color:red;
+    font-size: 20px;
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.modal-background {
+    background-image: unset;
+}
+.modal {
+    background: transparent;
+}
