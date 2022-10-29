@@ -1,34 +1,28 @@
 const inputEl = document.querySelector('#search-term')
+const standingsContainerEl = document.querySelector("#standings-container")
+const standingsSearchTerm = document.querySelector("#standings-search-term")
 
-const modalEl = document.querySelector('.modal')
-const modalClose = document.querySelector('.modal-close')
-    modalClose.onClick = () => {
-        modalEl.style.display = 'none'
-    }
-    window.onclick = (event)  => {
-        if(event.target.className === 'modal-background') {
-            modalEl.style.display = 'none'
-        }
-    }
+clickSearch = () => {
+    const userInput = document.getElementById('search-term').value
+    apiRequest(userInput)
+}     
 
 const searchBtn = document.querySelector('#search-form')
 searchBtn.addEventListener('submit', clickSearch)
 
-clickSearch = () => {
-    const userInput = document.getElementById('search-term').value
-    apiRequest()
-} 
 
-apiRequest = () => {
-    fetch("https://ergast.com/api/f1/2008/driverStandings.json").then(function(response) {
+
+apiRequest = (userInput) => {
+    fetch("https://ergast.com/api/f1/" + userInput + "/driverStandings.json").then(function(response) {
         response.json().then(function(data) {
-            console.log(data)
+            displayStandings(data)
         });
     });
-
 }
 
-apiRequest();
-
-
+displayStandings = (year) => {
+    console.log(year)
+    standingsContainerEl.textContent = "";
+    standingsSearchTerm.textContent = year;
+}
 
