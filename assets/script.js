@@ -15,6 +15,20 @@ const searchBtn = document.querySelector('#search-form')
 searchBtn.addEventListener('submit', clickSearch)
 
 clickSearch = () => {
-    const userInput = capFirst(document.getElementById('search-term').value)
-    apiRequest(userInput)
+    const userInput = document.getElementById('search-term').value
+    apiRequest()
+} 
+
+apiRequest = () => {
+    fetch("https://ergast.com/api/f1/2008/driverStandings.json").then(function(response) {
+        response.json().then(function(data) {
+            console.log(data)
+        });
+    });
+
 }
+
+apiRequest();
+
+
+
